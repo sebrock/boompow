@@ -25,17 +25,20 @@ spec:
         pathType: Prefix
         backend:
           service:
-             name: boompow
-             port: 5031
+            name: boompow
+            port:
+              number: 5031
       - path: /service_ws
         pathType: Prefix
         backend:
           service:
-             name: boompow
-             port: 5035
+            name: boompow
+            port:
+              number: 5035
       - path: /service
         pathType: Prefix
         backend:
           service:
-             name: boompow
-             port: 5030
+            name: boompow
+            port:
+              number: 5030

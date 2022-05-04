@@ -1,4 +1,4 @@
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: boompow-ingress
@@ -22,14 +22,20 @@ spec:
     http:
       paths:
       - path: /upcheck
+        pathType: Prefix
         backend:
-          serviceName: boompow
-          servicePort: 5031
+          service:
+             name: boompow
+             port: 5031
       - path: /service_ws
+        pathType: Prefix
         backend:
-          serviceName: boompow
-          servicePort: 5035
+          service:
+             name: boompow
+             port: 5035
       - path: /service
+        pathType: Prefix
         backend:
-          serviceName: boompow
-          servicePort: 5030
+          service:
+             name: boompow
+             port: 5030

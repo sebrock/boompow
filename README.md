@@ -1,3 +1,14 @@
+
+# 🚨🚨🚨 Deprecated! - No Longer Used! - Legacy 🚨🚨🚨
+
+This is the original BoomPoW service used by BANANO, it was a fork of @guilhermelawless DPoW system originally for Nano.
+
+It is being phased out for BoomPoW V2, a complete rewrite, with an entirely different protocol, written with GO.
+
+[You can find that repository here](https://github.com/BananoCoin/boompow)
+
+The rationale for the rewrite is that this old version is memory hungry, requires an external MQTT broker, and many other reasons.
+
 # BoomPow (bPow)
 
 [![License](https://img.shields.io/github/license/BananoCoin/boompow)](https://github.com/BananoCoin/boompow/blob/master/LICENSE) [![CI](https://github.com/BananoCoin/boompow/workflows/CI/badge.svg)](https://github.com/BananoCoin/boompow/actions?query=workflow%3ACI)
